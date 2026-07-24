@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "bio": "Full-stack developer, open source contributor, and coffee enthusiast ☕",
+    "avatar": "/images/avatar.jpg",
+    "location": "San Francisco, CA"
+  },
+  "seo": {
+    "title": "Your Name - Developer",
+    "description": "Personal links and portfolio for Your Name, full-stack developer specializing in React and Node.js",
+    "ogImage": "https://yoursite.com/og-image.jpg",
+    "twitterHandle": "yourusername"
+  },
+  "cards": [
+    {
+      "id": "github",
+      "type": "social",
+      "position": 0,
+      "size": "1x1",
+      "visible": true,
+      "platform": "GitHub",
+      "username": "yourusername",
+      "url": "https://github.com/yourusername",
+      "icon": "github",
+      "followers": "1.2K"
+    },
+    {
+      "id": "twitter",
+      "type": "social",
+      "position": 1,
+      "size": "1x1",
+      "visible": true,
+      "platform": "Twitter",
+      "username": "@yourusername",
+      "url": "https://twitter.com/yourusername",
+      "icon": "twitter"
+    },
+    {
+      "id": "main-project",
+      "type": "project",
+      "position": 2,
+      "size": "2x1",
+      "visible": true,
+      "title": "Portfolio Website",
+      "description": "My personal portfolio built with Next.js, TypeScript, and Tailwind CSS",
+      "url": "https://yoursite.com",
+      "image": "/images/projects/portfolio.jpg",
+      "tags": ["Next.js", "TypeScript", "Tailwind"],
+      "featured": true
+    },
+    {
+      "id": "blog",
+      "type": "link",
+      "position": 3,
+      "size": "1x1",
+      "visible": true,
+      "title": "Blog",
+      "description": "Thoughts on web development",
+      "url": "https://blog.yoursite.com",
+      "icon": "book-open"
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "position": 4,
+      "size": "1x1",
+      "visible": true,
+      "title": "Get in touch",
+      "email": "hello@yoursite.com",
+      "subject": "Hello from your website!",
+      "icon": "mail"
+    }
+  ],
+  "theme": {
+    "primaryColor": "#3b82f6",
+    "accentColor": "#8b5cf6"
+  }
+}
