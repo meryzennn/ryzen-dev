@@ -69,6 +69,118 @@
       "email": "hello@yoursite.com",
       "subject": "Hello from your website!",
       "icon": "mail"
+    },
+    {
+      "id": "linkedin",
+      "type": "social",
+      "position": 5,
+      "size": "1x1",
+      "visible": true,
+      "platform": "LinkedIn",
+      "username": "Your Name",
+      "url": "https://linkedin.com/in/yourprofile",
+      "icon": "Linkedin"
+    },
+    {
+      "id": "project-2",
+      "type": "project",
+      "position": 6,
+      "size": "2x1",
+      "visible": true,
+      "title": "E-commerce Platform",
+      "description": "Full-stack e-commerce solution with Next.js and Stripe integration",
+      "url": "https://example-shop.com",
+      "tags": ["React", "Node.js", "Stripe", "PostgreSQL"]
+    },
+    {
+      "id": "youtube",
+      "type": "social",
+      "position": 7,
+      "size": "1x1",
+      "visible": true,
+      "platform": "YouTube",
+      "username": "Your Channel",
+      "url": "https://youtube.com/@yourchannel",
+      "icon": "Youtube",
+      "followers": "500"
+    },
+    {
+      "id": "docs",
+      "type": "link",
+      "position": 8,
+      "size": "1x1",
+      "visible": true,
+      "title": "Documentation",
+      "description": "Technical guides and tutorials",
+      "url": "https://docs.yoursite.com",
+      "icon": "FileText"
+    },
+    {
+      "id": "project-3",
+      "type": "project",
+      "position": 9,
+      "size": "2x1",
+      "visible": true,
+      "title": "Mobile App",
+      "description": "Cross-platform mobile app built with React Native",
+      "url": "https://app-store-link.com",
+      "tags": ["React Native", "TypeScript", "Firebase"]
+    },
+    {
+      "id": "newsletter",
+      "type": "link",
+      "position": 10,
+      "size": "1x1",
+      "visible": true,
+      "title": "Newsletter",
+      "description": "Subscribe to my monthly newsletter",
+      "url": "https://newsletter.yoursite.com",
+      "icon": "Mail"
+    },
+    {
+      "id": "instagram",
+      "type": "social",
+      "position": 11,
+      "size": "1x1",
+      "visible": true,
+      "platform": "Instagram",
+      "username": "@yourusername",
+      "url": "https://instagram.com/yourusername",
+      "icon": "Instagram",
+      "followers": "2.5K"
+    },
+    {
+      "id": "portfolio",
+      "type": "link",
+      "position": 12,
+      "size": "1x1",
+      "visible": true,
+      "title": "Design Portfolio",
+      "description": "Check out my design work",
+      "url": "https://portfolio.yoursite.com",
+      "icon": "Palette"
+    },
+    {
+      "id": "discord",
+      "type": "social",
+      "position": 13,
+      "size": "1x1",
+      "visible": true,
+      "platform": "Discord",
+      "username": "Your Server",
+      "url": "https://discord.gg/yourserver",
+      "icon": "MessageCircle"
+    },
+    {
+      "id": "project-4",
+      "type": "project",
+      "position": 14,
+      "size": "2x1",
+      "visible": true,
+      "title": "API Service",
+      "description": "RESTful API service with GraphQL support and real-time subscriptions",
+      "url": "https://api.yoursite.com",
+      "tags": ["Node.js", "GraphQL", "Redis", "Docker"]
     }
   ],
   "theme": {

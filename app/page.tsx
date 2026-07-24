@@ -1,49 +1,58 @@
 import { loadContent } from "@/lib/content";
+import { CardRenderer } from "@/components/cards/CardRenderer";
 
 export default function Home() {
   const content = loadContent();
 
   return (
-    <div className="min-h-screen bg-background">
-      <main className="container mx-auto px-4 py-12 max-w-[1200px]">
-        {/* Profile Section */}
-        <section className="flex flex-col items-center text-center gap-4 mb-12">
-          <div className="w-[120px] h-[120px] rounded-full bg-muted flex items-center justify-center text-4xl font-bold text-muted-foreground">
-            {content.profile.name.charAt(0)}
-          </div>
-          <div className="space-y-2">
-            <h1 className="text-2xl font-bold">{content.profile.name}</h1>
-            <p className="text-base text-muted-foreground max-w-[600px]">
-              {content.profile.bio}
-            </p>
-            {content.profile.location && (
-              <p className="text-sm text-muted-foreground">
-                📍 {content.profile.location}
-              </p>
-            )}
-          </div>
-        </section>
+    <main className="min-h-screen bg-background">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8">
 
-        {/* Cards Grid - Placeholder */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {content.cards
-            .filter((card) => card.visible)
-            .sort((a, b) => a.position - b.position)
-            .map((card) => (
-              <div
-                key={card.id}
-                className="p-6 bg-card border border-border rounded-[24px] hover:shadow-md transition-all duration-200"
-              >
-                <h3 className="text-lg font-semibold mb-2">
-                  {card.title || card.type}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {card.description || `${card.type} card`}
-                </p>
+          {/* Sticky Sidebar */}
+          <div className="w-full md:w-[480px] flex-shrink-0">
+            <div className="sticky top-8">
+              <div className="bg-card rounded-[24px] p-10 shadow-lg border border-border">
+                {/* Profile Section */}
+                <div className="flex flex-col gap-6">
+                  <div className="w-[120px] h-[120px] rounded-full bg-muted flex items-center justify-center text-4xl font-bold text-muted-foreground">
+                    {content.profile.name.charAt(0)}
+                  </div>
+
+                  <div className="space-y-3">
+                    <h1 className="text-3xl font-bold tracking-tight">
+                      {content.profile.name}
+                    </h1>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {content.profile.bio}
+                    </p>
+                    {content.profile.location && (
+                      <p className="text-sm text-muted-foreground flex items-center gap-2">
+                        <span>📍</span>
+                        {content.profile.location}
+                      </p>
+                    )}
+                  </div>
+                </div>
               </div>
-            ))}
-        </section>
-      </main>
-    </div>
+            </div>
+          </div>
+
+          {/* Main Content */}
+          <div className="flex-1 flex flex-col gap-8 md:mt-0">
+            {/* Cards Grid */}
+            <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+              {content.cards
+                .filter((card) => card.visible)
+                .sort((a, b) => a.position - b.position)
+                .map((card) => (
+                  <CardRenderer key={card.id} card={card} />
+                ))}
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </main>
   );
 }
