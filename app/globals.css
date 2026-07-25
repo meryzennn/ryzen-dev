@@ -21,6 +21,23 @@
     --border: 214 32% 91%;
     --ring: 221 83% 53%;
 
+    /* Card type colors */
+    --social: 221 83% 53%;
+    --social-foreground: 0 0% 100%;
+    --social-light: 221 83% 97%;
+
+    --project: 262 83% 58%;
+    --project-foreground: 0 0% 100%;
+    --project-light: 262 83% 97%;
+
+    --link: 188 85% 48%;
+    --link-foreground: 0 0% 100%;
+    --link-light: 188 85% 96%;
+
+    --contact: 25 95% 58%;
+    --contact-foreground: 0 0% 100%;
+    --contact-light: 25 95% 96%;
+
     /* Spacing */
     --grid-gap: 1rem;
     --card-radius: 1.5rem;
@@ -43,6 +60,18 @@
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-border: hsl(var(--border));
   --color-ring: hsl(var(--ring));
+  --color-social: hsl(var(--social));
+  --color-social-foreground: hsl(var(--social-foreground));
+  --color-social-light: hsl(var(--social-light));
+  --color-project: hsl(var(--project));
+  --color-project-foreground: hsl(var(--project-foreground));
+  --color-project-light: hsl(var(--project-light));
+  --color-link: hsl(var(--link));
+  --color-link-foreground: hsl(var(--link-foreground));
+  --color-link-light: hsl(var(--link-light));
+  --color-contact: hsl(var(--contact));
+  --color-contact-foreground: hsl(var(--contact-foreground));
+  --color-contact-light: hsl(var(--contact-light));
 }
 
 * {

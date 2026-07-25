@@ -13,7 +13,7 @@ export function ContactCard({ email, title = "Get in touch", subject }: ContactC
   return (
     <BaseCard href={mailto}>
       <div className="flex flex-col gap-4">
-        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+        <div className="w-12 h-12 bg-contact-light rounded-xl flex items-center justify-center text-contact">
           <Mail className="w-6 h-6" />
         </div>
         <div>

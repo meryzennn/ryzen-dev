@@ -32,7 +32,7 @@ export function ProjectCard({ title, description, url, image, tags }: ProjectCar
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2 py-1 bg-muted text-xs font-medium rounded-md"
+                  className="px-2 py-1 bg-project-light text-project text-xs font-medium rounded-md"
                 >
                   {tag}
                 </span>

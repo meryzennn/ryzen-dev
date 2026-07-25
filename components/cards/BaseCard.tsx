@@ -8,7 +8,7 @@ interface BaseCardProps {
 }
 
 export function BaseCard({ href, children, className = "" }: BaseCardProps) {
-  const baseClasses = "p-6 bg-card border border-border rounded-[24px] hover:shadow-md transition-all duration-200 hover:-translate-y-1 flex flex-col justify-between h-full";
+  const baseClasses = "p-6 bg-card border border-border rounded-[24px] hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 hover:-translate-y-1 flex flex-col justify-between h-full";
 
   if (href) {
     return (

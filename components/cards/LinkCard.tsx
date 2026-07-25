@@ -15,7 +15,7 @@ export function LinkCard({ title, description, url, icon }: LinkCardProps) {
     <BaseCard href={url}>
       <div className="flex items-start gap-3">
         {IconComponent && (
-          <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+          <div className="w-12 h-12 bg-link-light rounded-xl flex items-center justify-center text-link flex-shrink-0">
             <IconComponent className="w-6 h-6" />
           </div>
         )}
